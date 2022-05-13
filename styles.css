@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* Devido à acessibilidade alteramos o tamanho das fontes para rem */
+:root {
+    /* font-size: 62,5%; equivale a 1 rem a 10px, pois 100% = 16px 1 rem */
+    --primary-color: #00856F;
+    --paragraph: #495057;
+    --beige: #FFFAF1;
+    --color-border: #DCE9E2;
+}
+
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+h4 {
+    font-size: 14px;
+    color: var(--primary-color);
+    margin-bottom: 16px;
+}
+
+h1 { 
+    font-size: 34px;
+    color: #212529;
+    line-height: 130%;
+    margin-bottom: 24px;
+}
+
+header {
+    width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 41px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--paragraph);
+    margin-bottom: 32px;
+}
+
+button {
+    display: flex;
+    color: #FFF;
+    background-color: var(--primary-color);
+    border-radius: 40px;
+    width: 263px;
+    height: 62px;
+    border: none;
+    margin-bottom: 60px;
+    font-weight: 700;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+i {
+    font-size: 25px;
+    vertical-align: middle;
+}
+
+.stats {
+    width: 327px;
+    height: 470px;
+    margin-inline: auto;
+    background-color: var(--beige);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 60px;
+    border-radius: 6px;
+    border: 1px solid var(--color-border);
+    
+}
+
+.stat h3 {
+    font-size: 48px;
+    line-height: 130%;
+    margin-bottom: 4px;
+}
+
+.stat p {
+    margin: 0;
+    color: var(--primary-color)
+}
+
+header::before {
+    content: "";
+    width: 100vw;
+    height: 1080px;
+    background-color: var(--color-border);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
